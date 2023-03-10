@@ -1,16 +1,18 @@
 import styled from "styled-components";
-import {StyledNavBar} from "./styles/StyledNavBar.styled";
-import {NavigationLinks} from "./styles/NavigationLinks.styled";
-import logo from "../assets/logo";
-
+import {NavLinksContainer} from "./styles/NavLinksContainer.styled";
+import {NavigationLink} from "./styles/NavigationLink.styled";
+import { ReactComponent as Logo } from "../assets/logo.svg"
 function NavBar(){
     const NavLinksItems = ['How we work' , 'Pricing/Services' , 'Contact' , 'About Us'] 
 return(
-    <StyledNavBar>
+    <div style={{position:"relative"}}>
+        <Logo width="200" height="84"></Logo>
+        <NavLinksContainer>
         {NavLinksItems.map((item , index) => {
-           return <NavigationLinks key={index}>{item}</NavigationLinks>
+           return <NavigationLink key={index}>{item}</NavigationLink>
         })}
-    </StyledNavBar>
+    </NavLinksContainer>
+    </div>
 );
 }
 

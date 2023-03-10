@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 
 
-export const NavigationLinks = styled.span`
+export const NavigationLink = styled.span`
 margin-left:69px;
 font-family: 'Inter';
 font-style: normal;
