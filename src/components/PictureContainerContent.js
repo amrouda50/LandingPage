@@ -4,11 +4,9 @@ import { PictureContainer } from "./styles/PictureContained.styled";
 function PictureContainerContent(){
 
     return (
-        <div>
-
-<PictureContainer>Omar</PictureContainer>
-
-</div>
+    <div>
+        <PictureContainer></PictureContainer>
+    </div>
     );
 }
 
