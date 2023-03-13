@@ -1,6 +1,10 @@
 import {SectionText, TextContainer} from "./styles/HorizontalContainer.styled"
+import { useTranslation } from "react-i18next";
+
 
 function TextContainerContent({marginTop}){
+    const {t , i18n} = useTranslation();
+    i18n.changeLanguage("hu");
     return(
         <TextContainer marginTop={marginTop}>
             <h1>Find your perfect place with
@@ -8,7 +12,7 @@ function TextContainerContent({marginTop}){
                 <span style={{color:"#E7305B"}}>Rent</span>
             </h1>
                 <SectionText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  
+                    {t('Introduction')}
                 </SectionText>
         </TextContainer>
     );

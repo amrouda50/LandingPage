@@ -5,7 +5,7 @@ import TextContainerContent from "./TextContainerContent";
 
 
 function HorizontalContainer(){
-
+    
     return(
        <HorizontalContainerStyle>
             <TextContainerContent marginTop={'39px'}/>
