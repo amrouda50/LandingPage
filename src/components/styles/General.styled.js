@@ -8,7 +8,6 @@ height: 38px;
 width: 38px;
 display: inline-block;
 text-align: center;
-font-weight:900;
+font-weight:600;
 font-size:xx-large;
-
 `

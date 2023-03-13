@@ -28,3 +28,14 @@ font-size: 18px;
 line-height: 150%;
 color: #FFFFFF;
 `;
+
+export const SectionHeader = styled.h2`
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 30px;
+padding:10px;
+line-height: 48px;
+color: #FFFFFF;
+display:inline;
+`
