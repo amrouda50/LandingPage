@@ -29,6 +29,8 @@ line-height: 150%;
 color: #FFFFFF;
 `;
 
+
+
 export const SectionHeader = styled.h2`
 font-family: 'Inter';
 font-style: normal;
