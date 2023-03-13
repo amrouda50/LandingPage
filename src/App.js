@@ -4,12 +4,14 @@ import NavBar from "./components/NavBar"
 import PictureContainer from "./components/PictureContainerContent";
 import "./reset.module.css"
 import HorizontalContainer from "./components/HorizontalContainer";
+import HowWeWork from "./components/HowWeWork";
 function App() {
 
   return (
     <Container>
-     <NavBar></NavBar>
-     <HorizontalContainer></HorizontalContainer>
+     <NavBar/>
+     <HorizontalContainer/>
+     <HowWeWork/>
     </Container>
   );
 }
