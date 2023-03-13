@@ -8,8 +8,8 @@ function HorizontalContainer(){
 
     return(
        <HorizontalContainerStyle>
-            <TextContainerContent/>
-            <PictureContainerContent size={"normal"}/>
+            <TextContainerContent marginTop={'39px'}/>
+            <PictureContainerContent size={"big"}/>
         </HorizontalContainerStyle> 
     );
 }

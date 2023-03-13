@@ -1,20 +1,24 @@
 import { useState } from "react";
-import { PictureContainer } from "./styles/PictureContained.styled";
+import { PictureContainer } from "./styles/HorizontalContainer.styled";
+import {ReactComponent as Parliament} from "../assets/BudapestParlament.svg"
+import {ReactComponent as ForRent} from "../assets/forRent.svg"
+import {ReactComponent as LivingRoom} from "../assets/LivingRoom.svg"
+import {ReactComponent as GirlDog} from "../assets/GirlDog.svg"
 
 
-function createStyle(size) {
-    if(size === "big") {
-        return {width: "682px" , height: "499px"};
-    }else if(size === "normal"){
-        return {width: "586px" , height: "429px"};
-    }
-    return {};
-}
+
 
 function PictureContainerContent({size}) {
+    const images = [Parliament , ForRent , LivingRoom , GirlDog];
     return (
-    <div>
-        <PictureContainer style={createStyle(size)}/>
+    <div>       
+        <PictureContainer size={size}>
+            <div style={{margin:"36px 70px"}}>
+                {images.map((Image , key) => {
+                    return <Image id={key}/>
+                })}
+            </div>
+         </PictureContainer>
     </div>
     );
 }

@@ -122,7 +122,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+h1,
+h2,
+h3,
+h4{
+  font-family:'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 77px;
+  color:#FFFFFF;
+}
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {NavLinksContainer} from "./styles/NavLinksContainer.styled";
 import {NavigationLink} from "./styles/NavigationLink.styled";
-import { ReactComponent as Logo } from "../assets/logo.svg"
+ import { ReactComponent as Logo } from "../assets/logo.svg"
 function NavBar(){
     const NavLinksItems = ['How we work' , 'Pricing/Services' , 'Contact' , 'About Us'] 
 return(
