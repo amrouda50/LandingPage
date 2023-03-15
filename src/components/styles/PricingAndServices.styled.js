@@ -6,7 +6,12 @@ import styled from "styled-components";
 export const SlidedPicContainer = styled(TextedContainer)`
 width: 666px;
 height: 745px;
-// position:absolute;
-// left:50%;
-// transform:translatex(-50%);
+
 `
+
+export const PricingContainer = styled.div`
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+`
+
+

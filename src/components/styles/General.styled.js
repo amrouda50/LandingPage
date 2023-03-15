@@ -21,6 +21,10 @@ margin-top:58px;
 export const ArrowStyled = styled(Arrow)`
 justify-self:left;
 align-self:center;
+path:hover{
+    fill: #E7305B;
+    cursor: pointer;
+}
 `
 export const ReverseArrowStyled = styled(ArrowStyled)`
 transform:matrix(-1, 0, 0, 1, 0, 0);

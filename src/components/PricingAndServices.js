@@ -4,19 +4,25 @@ import { useTranslation } from "react-i18next";
 import axios from "axios";
 import { ReverseArrowStyled, Content, ArrowStyled } from "./styles/General.styled"
 import SlideShowPicContainer from "./SlideShowPicContainer";
+import { PricingContainer} from "./styles/PricingAndServices.styled"
+
+const SlideEventHandler = (event) =>{
+console.log(event)
+}
 function PricingAndServices(){
     // SearchFlats();
     const {t , i18n} = useTranslation();
     i18n.changeLanguage("hu");
+
 return(
     <div>
         <Content>
         <SectionTitle header={t('SectionTwoHeader')} number={2} />  
-        <div style={{display:"grid", gridTemplateColumns:"1fr 1fr 1fr"} }>
-        <ArrowStyled/>
+        <PricingContainer >
+        <ArrowStyled onClick={SlideEventHandler}/>
         <SlideShowPicContainer></SlideShowPicContainer>
-        <ReverseArrowStyled/>
-        </div>
+        <ReverseArrowStyled onClick={SlideEventHandler}/>
+        </PricingContainer>
         </Content>
     </div>
 );}

@@ -14,7 +14,7 @@ function TextedPictureContainer(){
         {text:"Sign your contract!" , Image:Contract , margin:"131px 100px"},
     ];
     return(
-    <div style={{display:"grid", gridTemplateColumns:"1fr 1fr" , gridColumnGap:"121px"}}>
+    <div style={{display:"grid", gridTemplateColumns:"1fr 1fr" , gridColumnGap:"50px"}}>
         {steps.map((step)=> {
             return( 
             

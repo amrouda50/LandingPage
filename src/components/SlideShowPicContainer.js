@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { SlidedPicContainer } from "./styles/SlidedPicContainer.styled";
+import { SlidedPicContainer } from "./styles/PricingAndServices.styled";
 
 
 
