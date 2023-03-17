@@ -7,6 +7,8 @@ import {ReactComponent as Contract} from "../assets/SectionOne/Contract.svg";
 import { StepsText } from "./styles/TextedContainer.styled";
 
 function TextedPictureContainer(){
+    // why margin? better to use padding same for every component
+    // why are these svgs? (they are not. png should be handled differently than svg)
     const steps = [
         {text:"Check our website" , Image:CheckWebsite , margin:"131px 30px"},
         {text:"Pick your choice" , Image:PickChoice , margin:"125px 106px"},

@@ -4,7 +4,14 @@ import "./reset.module.css"
 import HorizontalContainer from "./components/HorizontalContainer";
 import HowWeWork from "./components/HowWeWork";
 import PricingAndServices from "./components/PricingAndServices";
-function App() {
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
+
+
+
+
+function App(){
+  
 
   return (
     <Container>

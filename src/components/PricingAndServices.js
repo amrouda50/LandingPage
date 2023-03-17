@@ -1,33 +1,45 @@
 
 import SectionTitle from "./SectionTitle";
-import { useTranslation } from "react-i18next";
 import axios from "axios";
 import { ReverseArrowStyled, Content, ArrowStyled } from "./styles/General.styled"
 import SlideShowPicContainer from "./SlideShowPicContainer";
-import { PricingContainer} from "./styles/PricingAndServices.styled"
+import { ServicesContainer , PricingContainer } from "./styles/PricingAndServices.styled"
+import { useTranslation } from "react-i18next";
+import { Line } from "./styles/PricingAndServices.styled";
 
 const SlideEventHandler = (event) =>{
 console.log(event)
 }
 function PricingAndServices(){
-    // SearchFlats();
+    // SearchFlats(); 
     const {t , i18n} = useTranslation();
     i18n.changeLanguage("hu");
-
+    const SharedApartments = [
+        {peopleCount:"2" , price:"350-500" , currency:"$"},
+        {peopleCount:"3" , price:"400-600" , currency:"$"},
+        {peopleCount:"4" , price:"280-400" , currency:"$"},
+        {peopleCount:"4+" , price:"200-350" , currency:"$"},
+    ];
 return(
     <div>
         <Content>
         <SectionTitle header={t('SectionTwoHeader')} number={2} />  
-        <PricingContainer >
+        <ServicesContainer >
         <ArrowStyled onClick={SlideEventHandler}/>
         <SlideShowPicContainer></SlideShowPicContainer>
         <ReverseArrowStyled onClick={SlideEventHandler}/>
+        </ServicesContainer>
+
+        <PricingContainer>
+          <Line color="red">
+
+          </Line>
         </PricingContainer>
         </Content>
     </div>
 );}
 
-
+// api request should be handled in the separate file. You can use hooks pattern to fetch them 
 async function SearchFlats(){
     const options = {
         method: 'GET',

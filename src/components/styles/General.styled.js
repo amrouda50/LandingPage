@@ -30,3 +30,24 @@ export const ReverseArrowStyled = styled(ArrowStyled)`
 transform:matrix(-1, 0, 0, 1, 0, 0);
 justify-self:right;
 `
+
+export const Line = styled.span`
+width: 97px;
+height: 0px;
+display:inline-block;
+border: 3px solid ${({color}) => {
+    if(color === 'red'){
+        return "#E7305B";
+    }
+    else if(color === 'grey'){
+        return "#BF9F7E"
+    }
+   else if(color === 'green'){
+    return "#9BDEAC";
+   }
+   else{
+    return "";
+   }
+    
+}};
+`

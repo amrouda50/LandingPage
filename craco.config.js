@@ -4,7 +4,7 @@ const { getLoader, loaderByName } = require('@craco/craco');
 module.exports = {
     mode: 'development',
     devServer:{
-        port: 3001
+        port: 3000
     },
     webpack: {
         configure: (webpackConfig) => {
