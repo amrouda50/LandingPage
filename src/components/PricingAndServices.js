@@ -10,16 +10,11 @@ import { Line } from "./styles/PricingAndServices.styled";
 const SlideEventHandler = (event) =>{
 console.log(event)
 }
+
 function PricingAndServices(){
     // SearchFlats(); 
     const {t , i18n} = useTranslation();
     i18n.changeLanguage("hu");
-    const SharedApartments = [
-        {peopleCount:"2" , price:"350-500" , currency:"$"},
-        {peopleCount:"3" , price:"400-600" , currency:"$"},
-        {peopleCount:"4" , price:"280-400" , currency:"$"},
-        {peopleCount:"4+" , price:"200-350" , currency:"$"},
-    ];
 return(
     <div>
         <Content>
