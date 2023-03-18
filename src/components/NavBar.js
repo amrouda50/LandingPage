@@ -1,9 +1,16 @@
-import styled from "styled-components";
+import { useContext } from "react";
+import LanguageContext from "./context/translation";
 import {NavLinksContainer} from "./styles/NavLinksContainer.styled";
 import {NavigationLink} from "./styles/NavigationLink.styled";
  import { ReactComponent as Logo } from "../assets/logo.svg"
 function NavBar(){
-    const NavLinksItems = ['How we work' , 'Pricing/Services' , 'Contact' , 'About Us'] 
+    const t = useContext(LanguageContext);
+    const NavLinksItems = [
+        t('NavBar.HowWeWork'),
+        t('NavBar.PricingAndServices'),
+        t('NavBar.Contact'),
+        t('NavBar.AboutUs')
+    ] 
 return(
     <div style={{position:"relative"}}>
         <Logo width="200" height="84"></Logo>

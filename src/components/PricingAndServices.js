@@ -4,7 +4,6 @@ import axios from "axios";
 import { ReverseArrowStyled, Content, ArrowStyled } from "./styles/General.styled"
 import SlideShowPicContainer from "./SlideShowPicContainer";
 import { ServicesContainer , PricingContainer } from "./styles/PricingAndServices.styled"
-import { useTranslation } from "react-i18next";
 import { Line } from "./styles/PricingAndServices.styled";
 import { useEffect, useState } from "react";
 import { useContext } from "react";
@@ -32,13 +31,12 @@ function PricingAndServices(){
 return(
     <div>
         <Content>
-        <SectionTitle header={t('SectionTwoHeader')} number={2} />  
+        <SectionTitle header={t('SectionTwo.Title')} number={2} />  
         <ServicesContainer >
         <ArrowStyled onClick={slideEventHandler}/>
         <SlideShowPicContainer></SlideShowPicContainer>
         <ReverseArrowStyled onClick={slideEventHandler}/>
         </ServicesContainer>
-
         <PricingContainer>
           <Line color="red">
 

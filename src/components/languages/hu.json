@@ -1,5 +1,25 @@
 {
-    "Introduction":"Lórum ipse a csilla, mint donság, és a vájék küllő. Csözveti, hogy mik a hűsítő banéjának a káritai, s többé nem a mellé hibál, hanem a nyestő bugyom mellé. Ahol a kackárott Jézus a gestelész, ott ketyegedik a vértes szetlelés. Sok mindenen ámorozhat a roskosz, de mégis csak ketyegedik a vértes szetlelés.",
-    "SectionOneHeader":"hogyan dolgozunk",
-    "SectionTwoHeader":"Árak és szolgáltatások"
+    "NavBar":{
+        "HowWeWork":"Hogyan dolgozunk",
+        "PricingAndServices":"árképzés/szolgáltatások",
+        "Contact":"kapcsolatba lépni",
+        "AboutUs":"Rólunk"
+    },
+    "Introduction":{
+        "Title":"Találja meg tökéletes helyét a segítségével",
+        "Body":"Lórum ipse a csilla, mint donság, és a vájék küllő. Csözveti, hogy mik a hűsítő banéjának a káritai, s többé nem a mellé hibál, hanem a nyestő bugyom mellé. Ahol a kackárott Jézus a gestelész, ott ketyegedik a vértes szetlelés. Sok mindenen ámorozhat a roskosz, de mégis csak ketyegedik a vértes szetlelés."
+    },
+     "SectionOne":{
+        "Title":"hogyan dolgozunk",
+        "Steps":{
+            "CheckWebsite":"Tekintse meg weboldalunkat",
+            "PickChoice":"Válassza ki a választását",
+            "ContactUs":"Lépjen kapcsolatba velünk",
+            "SignContract":"Írja alá a szerződését"
+        }
+     },
+    "SectionTwo":{
+        "Title":"Árak és szolgáltatások",
+        "Body":"Lórum ipse a csilla, mint donság, és a vájék küllő. Csözveti, hogy mik a hűsítő banéjának a káritai, s többé nem a mellé hibál, hanem a nyestő bugyom mellé. Ahol a kackárott Jézus a gestelész, ott ketyegedik a vértes szetlelés. Sok mindenen ámorozhat a roskosz, de mégis csak ketyegedik a vértes szetlelés."
+    }
 }

@@ -1,18 +1,18 @@
 import {SectionText, TextContainer} from "./styles/HorizontalContainer.styled"
-import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import LanguageContext from "./context/translation";
 
 
 function TextContainerContent({marginTop}){
-    const {t , i18n} = useTranslation();
-    i18n.changeLanguage("hu");
+    const t = useContext(LanguageContext);
     return(
         <TextContainer marginTop={marginTop}>
-            <h1>Find your perfect place with
+            <h1>{t('Introduction.Title')}
                 <span style={{color:"#9BDEAC"}}> Buda</span>
                 <span style={{color:"#E7305B"}}>Rent</span>
             </h1>
                 <SectionText>
-                    {t('Introduction')}
+                    {t('Introduction.Body')}
                 </SectionText>
         </TextContainer>
     );

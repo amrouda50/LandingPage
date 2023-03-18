@@ -5,14 +5,17 @@ import HorizontalContainer from "./components/HorizontalContainer";
 import HowWeWork from "./components/HowWeWork";
 import PricingAndServices from "./components/PricingAndServices";
 import { useTranslation } from "react-i18next";
-import { createContext, useEffect } from "react";
 import LanguageContext from "./components/context/translation";
+import { useEffect } from "react";
 
 
 
 
 function App() {
-  const {t , i18n} = useTranslation(); 
+  const {t , i18n} = useTranslation();
+  useEffect(() => {
+    i18n.changeLanguage('en');
+  },[]);
   return (
     <LanguageContext.Provider value={t}>
     <Container>

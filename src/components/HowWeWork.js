@@ -10,7 +10,7 @@ function HowWeWork(){
     return(
         <HowWeWorkContainer>
             <Content>
-              <SectionTitle header={t('SectionOneHeader')} number={1}/>
+              <SectionTitle header={t('SectionOne.Title')} number={1}/>
               <TextedPictureContainer/>
             </Content>
   

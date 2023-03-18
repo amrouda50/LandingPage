@@ -1,5 +1,25 @@
 {
-"Introduction":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
-"SectionOneHeader":"How We Work",
-"SectionTwoHeader":"Pricing and Services"
+    "NavBar":{
+        "HowWeWork":"how we work",
+        "PricingAndServices":"Pricing/Services",
+        "Contact":"Contact",
+        "AboutUs":"About us"
+    },
+    "Introduction":{
+        "Title":"Find your perfect place with",
+        "Body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea"
+    },
+    "SectionOne":{
+        "Title":"How we work",
+        "Steps":{
+            "CheckWebsite":"Check our website",
+            "PickChoice":"Pick your choice",
+            "ContactUs":"Contact Us",
+            "SignContract":"Sign your contract"
+        }
+    },
+    "SectionTwo":{
+        "Title":"Prices and services",
+        "Body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea"
+    }
 }
