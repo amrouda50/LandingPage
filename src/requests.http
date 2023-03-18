@@ -1,1 +1,1 @@
-GET http://localhost:3001/SharedApartments/1 HTTP/1.1
+GET http://localhost:3001/SharedApartments HTTP/1.1

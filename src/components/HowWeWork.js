@@ -3,9 +3,10 @@ import { HowWeWorkContainer } from "./styles/HowWeWork.styled";
 import { Content } from './styles/General.styled';
 import { useTranslation } from "react-i18next";
 import TextedPictureContainer from "./TextedPictureContainer";
+import { useContext } from "react";
+import LanguageContext from "./context/translation";
 function HowWeWork(){
-    const {t , i18n} = useTranslation();
-    i18n.changeLanguage("hu");
+    const t = useContext(LanguageContext);
     return(
         <HowWeWorkContainer>
             <Content>

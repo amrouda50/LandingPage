@@ -17,10 +17,10 @@ function TextedPictureContainer(){
     ];
     return(
     <div style={{display:"grid", gridTemplateColumns:"1fr 1fr" , gridColumnGap:"50px"}}>
-        {steps.map((step)=> {
+        {steps.map((step,index)=> {
             return( 
             
-            <TextedContainer>
+            <TextedContainer key={index}>
                 <StepsText >{step.text}</StepsText>
                 <step.Image style={{margin:step.margin}}/>
             </TextedContainer>

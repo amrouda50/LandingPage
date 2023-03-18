@@ -6,23 +6,37 @@ import SlideShowPicContainer from "./SlideShowPicContainer";
 import { ServicesContainer , PricingContainer } from "./styles/PricingAndServices.styled"
 import { useTranslation } from "react-i18next";
 import { Line } from "./styles/PricingAndServices.styled";
-
-const SlideEventHandler = (event) =>{
+import { useEffect, useState } from "react";
+import { useContext } from "react";
+import LanguageContext from "./context/translation";
+const slideEventHandler = (event) =>{
 console.log(event)
 }
 
 function PricingAndServices(){
     // SearchFlats(); 
-    const {t , i18n} = useTranslation();
-    i18n.changeLanguage("hu");
+    
+    const [priceList , setPriceList] = useState({}); 
+    const t = useContext(LanguageContext);
+    const pricesListRequest = async () =>{
+        const response =  await axios
+         .get("http://localhost:3001/SharedApartments/1")
+         .then((response)=> console.log(response))
+         .catch((error) => console.log(error));
+       
+        setPriceList(response);
+        }
+    useEffect(() => {     
+        pricesListRequest();     
+    } , []);
 return(
     <div>
         <Content>
         <SectionTitle header={t('SectionTwoHeader')} number={2} />  
         <ServicesContainer >
-        <ArrowStyled onClick={SlideEventHandler}/>
+        <ArrowStyled onClick={slideEventHandler}/>
         <SlideShowPicContainer></SlideShowPicContainer>
-        <ReverseArrowStyled onClick={SlideEventHandler}/>
+        <ReverseArrowStyled onClick={slideEventHandler}/>
         </ServicesContainer>
 
         <PricingContainer>
@@ -35,7 +49,7 @@ return(
 );}
 
 // api request should be handled in the separate file. You can use hooks pattern to fetch them 
-async function SearchFlats(){
+async function searchFlats(){
     const options = {
         method: 'GET',
         url: 'https://airbnb13.p.rapidapi.com/search-location',

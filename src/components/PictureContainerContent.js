@@ -15,7 +15,7 @@ function PictureContainerContent({size}) {
         <PictureContainer size={size}>
             <div style={{margin:"36px 70px"}}>
                 {images.map((Image , key) => {
-                    return <Image id={key}/>
+                    return <Image key={key}/>
                 })}
             </div>
          </PictureContainer>
