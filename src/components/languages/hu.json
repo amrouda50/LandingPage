@@ -20,6 +20,10 @@
      },
     "SectionTwo":{
         "Title":"Árak és szolgáltatások",
-        "Body":"Lórum ipse a csilla, mint donság, és a vájék küllő. Csözveti, hogy mik a hűsítő banéjának a káritai, s többé nem a mellé hibál, hanem a nyestő bugyom mellé. Ahol a kackárott Jézus a gestelész, ott ketyegedik a vértes szetlelés. Sok mindenen ámorozhat a roskosz, de mégis csak ketyegedik a vértes szetlelés."
+        "Pricing":{
+            "SharedApartment":"Közös apartman",
+            "PrivateApartment": "Privát apartman",
+            "Studio":"Stúdió"
+        }   
     }
 }

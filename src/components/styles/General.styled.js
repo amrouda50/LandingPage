@@ -30,4 +30,13 @@ export const ReverseArrowStyled = styled(ArrowStyled)`
 transform:matrix(-1, 0, 0, 1, 0, 0);
 justify-self:right;
 `
-
+export const SectionHeader = styled.h2`
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 30px;
+padding:10px;
+line-height: 48px;
+color: #FFFFFF;
+display:inline;
+`

@@ -22,7 +22,7 @@ export const Line = styled.span`
 width: 97px;
 height: 0px;
 display:inline-block;
-border: 3px solid ${({color}) => {
+border: 1.5px solid ${({color}) => {
     if(color === 'red'){
         return "#E7305B";
     }

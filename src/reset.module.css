@@ -153,7 +153,7 @@ hr {
 }
 
 pre {
-  font-family: monospace, monospace;
+  font-family: monocapacity, monocapacity;
   font-size: 1em;
 }
 
@@ -175,7 +175,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: monocapacity, monocapacity;
   font-size: 1em;
 }
 
@@ -256,7 +256,7 @@ legend {
   display: table;
   max-width: 100%;
   padding: 0; /* 3 */
-  white-space: normal;
+  white-capacity: normal;
 }
 
 progress {
@@ -339,7 +339,7 @@ table {
 }
 
 textarea {
-  white-space: revert;
+  white-capacity: revert;
 }
 
 meter {
@@ -359,7 +359,7 @@ meter {
   -moz-user-modify: read-write;
   -webkit-user-modify: read-write;
   overflow-wrap: break-word;
-  -webkit-line-break: after-white-space;
+  -webkit-line-break: after-white-capacity;
 }
 
 :where([draggable="true"]) {

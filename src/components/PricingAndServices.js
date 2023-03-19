@@ -38,8 +38,10 @@ function PricingAndServices() {
                     <SlideShowPicContainer></SlideShowPicContainer>
                     <ReverseArrowStyled onClick={slideEventHandler} />
                 </ServicesContainer>
-                <PricingContainer>
-                    <CategoryPricing category={priceList}/>
+                <PricingContainer style={{display:"grid",gridGap:"70px",gridTemplateColumns:"1fr 1fr"}}>
+                    {priceList.map((value , key) =>{
+                        return <CategoryPricing key={key} category={value.data}/>
+                    })}
                 </PricingContainer>
             </Content>
         </div>

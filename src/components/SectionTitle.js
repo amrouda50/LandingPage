@@ -1,5 +1,5 @@
 
-import { SectionHeader } from './styles/HorizontalContainer.styled';
+import { SectionHeader } from './styles/General.styled';
 import { Circle } from './styles/General.styled';
 
 function SectionTitle({header,number}){

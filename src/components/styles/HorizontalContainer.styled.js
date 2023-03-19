@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 export const HorizontalContainerStyle = styled.div`
 display:flex;
-justify-content:space-between;
+justify-content:capacity-between;
 `;
 
 export const PictureContainer = styled.div`
@@ -31,13 +31,3 @@ color: #FFFFFF;
 
 
 
-export const SectionHeader = styled.h2`
-font-family: 'Inter';
-font-style: normal;
-font-weight: 800;
-font-size: 30px;
-padding:10px;
-line-height: 48px;
-color: #FFFFFF;
-display:inline;
-`
