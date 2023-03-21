@@ -25,5 +25,8 @@
             "PrivateApartment": "Private Apartment",
             "Studio":"Studio"
         }
+    },
+    "SectionThree":{
+        "Title":"About Us"
     }
 }

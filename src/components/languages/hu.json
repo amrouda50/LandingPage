@@ -25,5 +25,8 @@
             "PrivateApartment": "Privát apartman",
             "Studio":"Stúdió"
         }   
+    },
+    "SectionThree":{
+        "Title":"Rólunk"
     }
 }

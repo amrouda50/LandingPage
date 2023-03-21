@@ -8,11 +8,11 @@ import {ReactComponent as GirlDog} from "../assets/GirlDog.svg"
 
 
 
-function PictureContainerContent({size}) {
+function PictureContainerContent() {
     const images = [Parliament , ForRent , LivingRoom , GirlDog];
     return (
     <div>       
-        <PictureContainer size={size}>
+        <PictureContainer>
             <div style={{margin:"36px 70px"}}>
                 {images.map((Image , key) => {
                     return <Image key={key}/>

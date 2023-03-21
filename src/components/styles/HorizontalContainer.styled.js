@@ -11,8 +11,8 @@ justify-content:capacity-between;
 export const PictureContainer = styled.div`
 background: #1F1A33;
 border-radius: 53px;
-height:${(props)=>  props.size === 'big' ? "499px" : "429px"};
-width:${(props)=>  props.size === 'big' ? "682px" : "586px"};
+height:499px;
+width:682px;
 display:"grid";
 grid-template-columns:"1fr 1fr";
 `;

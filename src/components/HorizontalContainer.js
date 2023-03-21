@@ -4,12 +4,12 @@ import TextContainerContent from "./TextContainerContent";
 
 
 
-function HorizontalContainer(){
+function HorizontalContainer({textTitle,textMarginTop}){
     
     return(
-       <HorizontalContainerStyle>
-            <TextContainerContent marginTop={'39px'}/>
-            <PictureContainerContent size={"big"}/>
+       <HorizontalContainerStyle> 
+            <TextContainerContent textTitle={textTitle} marginTop={textMarginTop}/>
+            <PictureContainerContent />
         </HorizontalContainerStyle> 
     );
 }
