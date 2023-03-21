@@ -3,12 +3,13 @@ import { useContext } from "react";
 import LanguageContext from "./context/translation";
 
 
-function TextContainerContent({textTitle,marginTop,maxWidth}){
+function TextContainerContent({sectionTitle,paddingRight,textTitle,paddingTop,maxWidth}){
     const t = useContext(LanguageContext);
     return(
-        <TextContainer style={{maxWidth:maxWidth}} marginTop={marginTop}>
+        <TextContainer style={{maxWidth:maxWidth}} paddingTop={"2rem"}>
+                {sectionTitle}
                 {textTitle}
-                <SectionText>
+                <SectionText style={{paddingRight:paddingRight,paddingTop:paddingTop}}>
                     {t('Introduction.Body')}
                 </SectionText>
         </TextContainer>

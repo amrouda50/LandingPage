@@ -18,7 +18,7 @@ grid-template-columns:"1fr 1fr";
 `;
 
 export const TextContainer = styled.div`
-margin-top:${(prop)=> prop.marginTop}
+padding-top:${(prop)=> prop.paddingTop}
 `
 export const SectionText = styled.section`
 font-family: 'Inter';
