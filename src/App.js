@@ -7,7 +7,7 @@ import PricingAndServices from "./components/PricingAndServices";
 import { useTranslation } from "react-i18next";
 import LanguageContext from "./components/context/translation";
 import { useEffect } from "react";
-import AboutUs from "./components/AboutUs";
+import AboutUs from "./components/AboutUs/AboutUs";
 import PageTitle from "./components/PageTitle";
 
 

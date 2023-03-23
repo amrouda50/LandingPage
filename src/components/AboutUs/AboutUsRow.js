@@ -1,5 +1,5 @@
-import { AboutUsPictureContainer } from "./styles/AboutUs.styled.js";
-import TextContainerContent from "./TextContainerContent";
+import { AboutUsPictureContainer } from "../styles/AboutUs.styled.js";
+import TextContainerContent from "../TextContainerContent";
 
 
 
@@ -17,7 +17,7 @@ return(
     <TextContainerContent 
     isReversed={isReversed}
     sectionTitle={children}
-    maxWidth={"40%"}
+    maxWidth={"50%"}
     paddingTop={"3.125rem"}/>
     </div>
 );
