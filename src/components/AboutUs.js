@@ -11,8 +11,8 @@ return(
        <AboutUsRow  isReversed={false}>
        <SectionTitle header={t('SectionThree.Title')} number={3}/>
        </AboutUsRow>
-       {/* <AboutUsRow  isReversed={Object.values(0)[0]}/> */}
-    {/* // )} */}
+       <AboutUsRow  isReversed={true}/>
+   
     <div>Omar</div>
     </div>
 );
