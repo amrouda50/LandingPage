@@ -3,12 +3,22 @@ import TextContainerContent from "./TextContainerContent";
 
 
 
-
-function AboutUsRow({children , isReversed}){
+function AboutUsRow({children , Image, isReversed}){
+    
 return(
     <div style={{display:"flex" , justifyContent:"center"}}>
-    <AboutUsPictureContainer isReversed={isReversed}/>
-    <TextContainerContent isReversed={isReversed} sectionTitle={children} maxWidth={"40%"} paddingTop={"3.125rem"}/>
+    <AboutUsPictureContainer  isReversed={isReversed} >
+      <div >
+        {Image}
+      </div>
+    </AboutUsPictureContainer>
+    
+   
+    <TextContainerContent 
+    isReversed={isReversed}
+    sectionTitle={children}
+    maxWidth={"40%"}
+    paddingTop={"3.125rem"}/>
     </div>
 );
 }
