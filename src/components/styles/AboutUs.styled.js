@@ -17,7 +17,14 @@ margin-top:17.188rem;
 position:relative;
 `
 export const EmployeeContainer = styled(AboutUsPictureContainer)`
-background- color:#202A4D;
 width:29.625rem;
 height:33.625rem;
+background-color:#202A4D;
+`
+export const TeamGridContainer = styled.div`
+margin-top:6.875rem;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-row-gap:6.25rem;
+grid-column-gap:11.25rem;
 `

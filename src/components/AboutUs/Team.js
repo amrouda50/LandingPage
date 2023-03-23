@@ -1,12 +1,14 @@
-import { EmployeeContainer } from "../styles/AboutUs.styled";
-
+import { EmployeeContainer, TeamGridContainer } from "../styles/AboutUs.styled";
 
 
 function Team(){
 return(
-    <div style={{marginTop:"6.875rem"}}>
+    <TeamGridContainer>
         <EmployeeContainer> dasdasdasdas</EmployeeContainer>
-    </div>
+        <EmployeeContainer> dasdasdasdas</EmployeeContainer>
+        <EmployeeContainer> dasdasdasdas</EmployeeContainer>
+        <EmployeeContainer> dasdasdasdas</EmployeeContainer>
+    </TeamGridContainer>
 );
 
 }
