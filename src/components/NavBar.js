@@ -13,7 +13,7 @@ function NavBar(){
     ] 
 return(
     <div style={{position:"relative"}}>
-        <Logo width="200" height="84"></Logo>
+        <Logo width="200" height="84"/>
         <NavLinksContainer>
         {NavLinksItems.map((item , index) => {
            return <NavigationLink key={index}>{item}</NavigationLink>

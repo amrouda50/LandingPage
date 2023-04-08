@@ -9,6 +9,7 @@ import LanguageContext from "./components/context/translation";
 import { useEffect } from "react";
 import AboutUs from "./components/AboutUs/AboutUs";
 import PageTitle from "./components/PageTitle";
+import Form from "./components/Form/Form";
 
 
 
@@ -19,13 +20,14 @@ function App() {
   },[]);
   return (
     <LanguageContext.Provider value={t}>
-    <Container>
-     <NavBar/>
-     <HorizontalContainer marginTop={"2.438rem"} textTitle={<PageTitle/>} />
-     <HowWeWork/>
-     <PricingAndServices/>
-     <AboutUs/>
-    </Container>
+      <Container>
+        <NavBar/>
+        <HorizontalContainer marginTop={"2.438rem"} textTitle={<PageTitle/>} />
+        <HowWeWork/>
+        <PricingAndServices/>
+        <AboutUs/>
+        <Form/>
+      </Container>
     </LanguageContext.Provider>
   );
 }

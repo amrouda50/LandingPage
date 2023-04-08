@@ -122,6 +122,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+span {
+  color: #FFFFFF;
+}
 h1,
 h2,
 h3,

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {ReactComponent as Arrow} from "../../assets/SectionTwo/Arrow.svg";
 
 export const Circle = styled.span`
+color:#000000;
 background-color:#FFFFFF;
 border-radius:50%;
 height: 38px;
@@ -39,4 +40,14 @@ padding:10px;
 line-height: 48px;
 color: #FFFFFF;
 display:inline;
+`
+
+export const ContactUsButton = styled.button`
+display:block;
+width: 20.063rem;
+height: 3.875rem;
+background: linear-gradient(0deg, #E7305B, #E7305B), #202A4D;
+border-radius: 26px;
+margin:3rem auto;
+text-align:center;
 `
