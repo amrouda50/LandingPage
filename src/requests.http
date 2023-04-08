@@ -1,1 +1,6 @@
+
+GET http://localhost:3001/Team HTTP/1.1
+
+
+
 GET http://localhost:3001/SharedApartments HTTP/1.1

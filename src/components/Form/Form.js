@@ -31,9 +31,9 @@ function Form() {
                 <div>
                     <Logo width="200" height="84" />
                     <div style={{ display: "grid", margin: "6.25rem 0", rowGap: "3rem" }}>
-                        {infoLogos.map((obj) => {
+                        {infoLogos.map((obj,index) => {
                             return (
-                                <div style={{position:"relative"}}>
+                                <div key={index} style={{position:"relative"}}>
                                     <obj.Svg width={"39px"} height={"39px"} />
                                     <span style={{position:"absolute",top:"30%",left:"20%"}}>{obj.text}</span>
                                 </div>
@@ -41,7 +41,7 @@ function Form() {
                         })}
                     </div>
                     <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gridGap: "2.688rem" }}>
-                        {socialMediaLogos.map((Svg) => <Svg height={"4.875rem"} width={"4.875rem"} />)}
+                        {socialMediaLogos.map((Svg,index) => <Svg key={index} height={"4.875rem"} width={"4.875rem"} />)}
                     </div>
                 </div>
                 <InformationBox>

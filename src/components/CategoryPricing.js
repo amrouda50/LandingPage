@@ -13,7 +13,7 @@ function CategoryPricing({category , lineColor}){
         <SectionHeader style={{justifySelf:"center"}}>{t('SectionTwo.Pricing.'+ category[0].categoryName)}</SectionHeader> 
         <div style={{display:"grid",gridRowGap:"2.5rem",marginTop:"2.188rem"}}>                 
             {listCategory.map((rentalPlace , index) => {
-               return <PricingsRow index={index} rentalPlace={rentalPlace} category={category}/>
+               return <PricingsRow key={index} rentalPlace={rentalPlace} category={category}/>
             })}
             
         </div>

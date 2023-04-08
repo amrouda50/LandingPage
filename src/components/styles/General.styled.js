@@ -50,4 +50,9 @@ background: linear-gradient(0deg, #E7305B, #E7305B), #202A4D;
 border-radius: 26px;
 margin:3rem auto;
 text-align:center;
+cursor:pointer;
+&:active{
+    background-color: #3e8e41;
+    transform: translateY(3px);
+}
 `
