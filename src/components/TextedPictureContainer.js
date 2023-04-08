@@ -19,7 +19,7 @@ function TextedPictureContainer(){
         {text:t('SectionOne.Steps.SignContract') , Image:Contract , margin:"131px 100px"},
     ];
     return(
-    <div style={{display:"grid", gridTemplateColumns:"1fr 1fr" , gridColumnGap:"50px"}}>
+    <div style={{display:"grid", gridTemplateColumns:"1fr 1fr" , gridColumnGap:"50px" , justifyItems:"center"}}>
         {steps.map((step,index)=> {
             return( 
             

@@ -19,6 +19,12 @@
       {"id":"2","capacity":"18-20","capacityUnit":"sqr","price":"280-300","currency":"$"},
       {"id":"3","capacity":"20-25","capacityUnit":"sqr","price":"300-350","currency":"$"},
       {"id":"4","capacity":"25-30","capacityUnit":"sqr","price":"350-400","currency":"$"}
+  ],
+  "Team":[
+      {"id":"1","name":"Omar Ashour","job":"CEO/Web Developer","image":"assets/Team/omar-ashour.jpg"},
+      {"id":"2","name":"Josh Carlos","job":"Marketing Head","image":"assets/Team/josh-carlos.jfif"},
+      {"id":"3","name":"Kornel Nagy","job":"Finance Head","image":"assets/Team/kornel-nagy.jfif"},
+      {"id":"4","name":"John Whistle","job":"Financer","image":"assets/Team/john-whistle.jfif"},
+      {"id":"5","name":"Emma Watson","job":"Faculty Manager","image":"assets/Team/emma-watson.jfif"}
   ]
-
 }
