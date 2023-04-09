@@ -32,3 +32,16 @@ grid-column-gap:11.25rem;
 export const EmplyeesContainer = styled.div`
 position:relative;
 `
+
+export const EmployeePicture = styled.img`
+border-radius:8rem;
+width:140px;
+height:140px;
+align-self:center;
+`
+export const EmployeeDetailsContainer = styled.div`
+display:flex;
+flex-direction:column;
+align-self:flex-start;
+margin-top:2rem;
+`

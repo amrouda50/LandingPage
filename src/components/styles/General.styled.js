@@ -56,3 +56,14 @@ cursor:pointer;
     transform: translateY(3px);
 }
 `
+
+export const EmployeeName = styled(SectionHeader)`
+font-weight: 700;
+font-size: 36px;
+padding:0px;
+`
+
+export const EmployeeJob = styled(EmployeeName)`
+font-size: 18px;
+color:rgba(95, 91, 91, 1);
+`
