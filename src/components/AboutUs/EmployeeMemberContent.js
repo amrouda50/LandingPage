@@ -6,9 +6,6 @@ import { EmployeeJob, EmployeeName } from "../styles/General.styled";
 
 
 function EmployeeMemberContent({name,job,image}){
-    useEffect(() => {
-     console.log(image);
-    },[])
 
 return(
     <EmployeeDetailsContainer>

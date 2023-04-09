@@ -7,7 +7,6 @@ import PricingsRow from "./PricingsRow";
 function CategoryPricing({category , lineColor}){
     const listCategory = category.filter((value , index)=> index === 0?false:true);
     const t = useContext(LanguageContext);
-    console.log(listCategory);
     return(
         <div style={{display:"grid"}}>           
         <SectionHeader style={{justifySelf:"center"}}>{t('SectionTwo.Pricing.'+ category[0].categoryName)}</SectionHeader> 

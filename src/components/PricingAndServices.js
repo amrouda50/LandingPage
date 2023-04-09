@@ -9,7 +9,7 @@ import { useContext } from "react";
 import LanguageContext from "./context/translation";
 import CategoryPricing from "./CategoryPricing";
 const slideEventHandler = (event) => {
-    console.log(event)
+   
 }
 
 function PricingAndServices() {
@@ -24,7 +24,6 @@ function PricingAndServices() {
             .catch((error) => console.log(error));
         }))
         .then((values) =>setPriceList(values)); 
-        // console.log(priceList); 
     }
     useEffect(() => {
         pricesListRequest();
